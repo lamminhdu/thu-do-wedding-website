@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`font-sans ${inter.variable}`}>
+			<body className={`bg-[#084539] font-sans ${inter.variable}`}>
 				{children}
 				<SpeedInsights />
 				<Analytics />
