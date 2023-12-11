@@ -19,7 +19,7 @@ export function Invitation() {
 				2069
 			</p>
 
-			<div className="mx-24 text-center">
+			<div className="mx-20 text-center">
 				<p className="text-sm md:text-2xl text-[#FFDCA7] pb-4">tại địa chỉ</p>
 				<Link
 					className="text-sm md:text-2xl text-[#FFDCA7] underline"
