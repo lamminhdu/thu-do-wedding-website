@@ -1,8 +1,12 @@
-export default function Gallery() {
+interface Props {
+	title: string;
+}
+
+export function Gallery({ title }: Props) {
 	return (
 		<div className="container mx-auto px-5 md:px-44">
 			<p className="text-[#FFDCA7] text-2xl text-left md:text-center md:text-5xl">
-				Album ảnh
+				{title}
 			</p>
 			<div className="grid grid-cols-2 md:grid-cols-3 gap-3.5 md:gap-6 mt-20">
 				<div className="grid gap-4">

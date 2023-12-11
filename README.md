@@ -11,4 +11,3 @@ If you don't run the repository in `Gitpod` environment
 ## Commitlint
 
 Run `pnpm run cz` to commit instead of `git commit` or using editor UI
-
