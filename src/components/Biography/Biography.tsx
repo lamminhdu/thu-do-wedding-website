@@ -17,7 +17,10 @@ export function Biography({ biographies }: Props) {
 		<section className="px-5 lg:px-32">
 			{biographies.map((bio, index) => {
 				return (
-					<div className="flex flex-col lg:grid lg:grid-cols-2 last:mt-8 lg:last:mt-0 lg:gap-4">
+					<div
+						key={bio.href}
+						className="flex flex-col lg:grid lg:grid-cols-2 last:mt-8 lg:last:mt-0 lg:gap-4"
+					>
 						<img
 							src={bio.href}
 							alt="groom"

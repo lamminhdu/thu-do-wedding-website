@@ -1,8 +1,21 @@
+import { Banner } from "~/components/Banner/Banner";
 import { Biography } from "~/components/Biography/Biography";
 import { Gallery } from "~/components/Gallery";
 import { GalleryLink } from "~/components/GalleryLink";
 import { Invitation } from "~/components/Invitation";
 import { Story } from "~/components/Story/Story";
+
+const banner = {
+	href: {
+		mobile: "https://static.namtay.vn/assets/img/theme4/banner-mobile.png",
+		tablet: "https://static.namtay.vn/assets/img/theme4/banner-tablet.png",
+		desktop: "https://static.namtay.vn/assets/img/theme4/banner.jpg",
+	},
+	characters: ["L", "H"],
+	title: "Chúng tôi cưới",
+	headings: ["Chú rể", "Cô dâu"],
+	date: "06 . 09 . 2069",
+};
 
 const biographies = [
 	{
@@ -47,7 +60,7 @@ const storyProp = {
 export default function HomePage() {
 	return (
 		<main>
-			<h1>Homepage Test</h1>
+			<Banner {...banner} />
 			<Invitation />
 			<GalleryLink
 				leadText={`Tiệm chụp ảnh cưới vì "ế" khách mùa dịch đã quyết định tặng bọn mình
