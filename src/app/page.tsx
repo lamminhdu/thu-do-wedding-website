@@ -1,5 +1,6 @@
 import { Banner } from "~/components/Banner/Banner";
 import { Biography } from "~/components/Biography/Biography";
+import { Event } from "~/components/Event/Event";
 import { Gallery } from "~/components/Gallery";
 import { GalleryLink } from "~/components/GalleryLink";
 import { Invitation } from "~/components/Invitation";
@@ -57,6 +58,30 @@ const storyProp = {
   đã thuộc về nửa kia từ bao giờ dù chúng tôi chưa từng gặp nhau...`,
 };
 
+const events = [
+	{
+		date: "09:00 20/05/2021",
+		title: "Ăn hỏi 2",
+		location: "Nhà Gái",
+		googleMap: "https://www.google.com/maps/",
+		address: "461 Nguyễn Khang, Cầu Giấy, Hà Nội & Tòa nhà Hei",
+	},
+	{
+		date: "09:00 20/05/2021",
+		title: "Rước dâu",
+		location: "Nhà Gái",
+		googleMap: "https://www.google.com/maps/",
+		address: "461 Nguyễn Khang, Cầu Giấy, Hà Nội & Tòa nhà Hei",
+	},
+	{
+		date: "09:00 20/05/2021",
+		title: "Tiệc cưới",
+		location: "Nhà Gái",
+		googleMap: "https://www.google.com/maps/",
+		address: "461 Nguyễn Khang, Cầu Giấy, Hà Nội & Tòa nhà Hei",
+	},
+];
+
 export default function HomePage() {
 	return (
 		<main>
@@ -71,6 +96,7 @@ export default function HomePage() {
 			<Biography biographies={biographies} />
 			<Story {...storyProp} />
 			<Gallery title="Album Ảnh" />
+			<Event events={events} />
 		</main>
 	);
 }
