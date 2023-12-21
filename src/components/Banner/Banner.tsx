@@ -1,5 +1,3 @@
-import { StringValidation } from "zod";
-
 interface Props {
 	href: {
 		mobile: string;

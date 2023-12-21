@@ -1,6 +1,8 @@
+import Avatar from "~/assets/portrait.png";
 import { Banner } from "~/components/Banner/Banner";
 import { Biography } from "~/components/Biography/Biography";
 import { Event } from "~/components/Event/Event";
+import { Footer } from "~/components/Footer/Footer";
 import { Gallery } from "~/components/Gallery";
 import { GalleryLink } from "~/components/GalleryLink";
 import { Guestbook } from "~/components/Guestbook/Guestbook";
@@ -121,6 +123,12 @@ const remitters = [
 	},
 ];
 
+const footer = {
+	content: "Sản phẩm được tạo bởi",
+	logo: Avatar.src,
+	href: "https://www.facebook.com/AnhThu2301",
+};
+
 export default function HomePage() {
 	return (
 		<main>
@@ -137,6 +145,7 @@ export default function HomePage() {
 			<Gallery title="Album Ảnh" />
 			<Event events={events} />
 			<Guestbook remitters={remitters} />
+			<Footer {...footer} />
 		</main>
 	);
 }
